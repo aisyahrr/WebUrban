@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav {
+    @apply relative flex justify-center items-center text-black hover:text-[#1887a0e3] tracking-[1px];
+  }
+
+  .nav::after {
+    @apply md:content-[''] md:bg-brandblue md:h-[3px] md:w-[0%] md:left-0 md:-bottom-[5px] 
+            md:rounded-xl md:absolute md:duration-300;
+  }
+
+  .nav:hover::after,
+  .nav.active::after {
+    @apply md:w-[100%];
+  }
+
+  .nav.active {
+    @apply text-[#1887a0e3]; /* Warna teks untuk halaman aktif */
+  }
+}
+@layer components {
+  .grid-card {
+    @apply bg-blue-500 aspect-[4/3] rounded-lg 
+            md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+  }
+  .grid-card-img {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-6 transition-all duration-500;
+  }
+  .bg-custom {
+    background-image: url("/public/image/Subtract.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-promo {
+    background-image: url("/public/image/bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .btn {
+    @apply px-4 py-2 border rounded-sm bg-gray-300 text-black text-sm;
+  }
+  .btnColor {
+    @apply px-4 py-2 w-[65px] border rounded-sm bg-gray-300 text-black text-sm;
+  }
+
+  .btn-selected {
+    @apply bg-brandblue rounded-sm text-white font-bold;
+  }
+}
