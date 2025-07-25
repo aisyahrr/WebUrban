@@ -3,7 +3,7 @@ import tas from "./Slider/Tas.png";
 import shoes from "./Slider/shoes.png";
 import jam1 from "./Slider/Jam1.png";
 import backgroundTas from "./Slider/bgtas.jpg";
-import backgroundShoes from "./Slider/backgroundshoes.jpg";
+import backgroundShoes from "./Slider/Bgshoes.jpg";
 import backgroundJam from "./Slider/bgjam.png";
 
 //product
