@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         brandblue: "#08BBE1",
         brandgrey: "#D9D9D9",
+        Blue: "#31B1CC",
       },
       screen: {
         md: "900px",

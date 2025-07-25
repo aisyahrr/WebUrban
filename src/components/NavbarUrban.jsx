@@ -1,6 +1,6 @@
 import React from "react";
 import { menuLinks } from "../data/file";
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,6 +8,12 @@ const NavbarUrban = () => {
   const bag = "/image/bag.png";
   const like = "/image/heart.png";
   const line = "/image/line.png";
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Masuk"); // <-- pindah ke halaman login
+  };
   return (
     <div className=" w-screen dark:bg-gray-900 dark:text-white ">
       <div className="flex justify-between mx-14 my-4 px-5 font-roboto font-semibold">
@@ -53,7 +59,8 @@ const NavbarUrban = () => {
         </div>
 
         <div className="flex gap-2 ml-7">
-          <button className="h-9 w-20 border rounded-md border-brandblue text-center items-center ">
+          <button className="h-9 w-20 border rounded-md border-brandblue text-center items-center "
+            onClick={handleClick}>
             <h1 className="text-lg font-semibold text-brandblue"> Masuk </h1>
           </button>
           <button className="h-9 w-20 border rounded-md bg-brandblue text-center items-center ">

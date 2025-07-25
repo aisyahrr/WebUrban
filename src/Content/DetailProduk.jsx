@@ -13,7 +13,7 @@ import { AiTwotoneLike } from "react-icons/ai";
 import Rekomendasi from "./rekomendasi";
 
 
-const Checkout = () => {
+const DetailProduk = () => {
     const logoUrl = "/image/Vector.png";
     const clock = "/image/Clock.png";
     const location = "/image/Location.png";
@@ -393,4 +393,4 @@ return (
 };
 
 
-export default Checkout;
+export default DetailProduk;
