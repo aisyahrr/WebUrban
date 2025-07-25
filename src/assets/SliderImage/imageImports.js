@@ -2,9 +2,9 @@
 import tas from "./Slider/Tas.png";
 import shoes from "./Slider/shoes.png";
 import jam1 from "./Slider/Jam1.png";
-import backgroundTas from "./Slider/backgroundTas.jpg";
+import backgroundTas from "./Slider/backgroundtas.jpg";
 import backgroundShoes from "./Slider/backgroundshoes.jpg";
-import backgroundJam from "./Slider/backgroundJam.png";
+import backgroundJam from "./Slider/backgroundjam.png";
 
 //product
 import sepatu from "./product/sepatu.jpg";
